@@ -1,0 +1,58 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: "Athira & Vishnu",
+    partner: null,
+    location: "Kochi Wedding, Kerala",
+    initial: "A",
+    text: "We wanted memories that felt real, not staged. RAW FILMS gave us exactly that. Every smile, every happy tear, and every little moment with our families was captured so naturally. Watching our wedding film still gives us goosebumps.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Nithin & Megha",
+    partner: null,
+    location: "Mysuru Palace Wedding, Karnataka",
+    initial: "N",
+    text: "Shailu and his team blended into the celebration like family. The final photographs are elegant, timeless, and filled with emotion. Our parents couldn't stop looking through the album.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Anjali & Akhil",
+    partner: null,
+    location: "Alappuzha Backwater Wedding, Kerala",
+    initial: "A",
+    text: "Every frame feels like a movie scene. From the boat ride to the intimate ceremony by the backwaters, RAW FILMS captured our story beautifully. We honestly couldn't have asked for a better team.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Pooja & Rohan",
+    partner: null,
+    location: "Coorg Destination Wedding, Karnataka",
+    initial: "P",
+    text: "The misty mornings, coffee estates, and our happiest moments were documented perfectly. We were completely comfortable throughout the shoot, and the results exceeded every expectation.",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Keerthana & Sandeep",
+    partner: null,
+    location: "Thrissur Temple Wedding, Kerala",
+    initial: "K",
+    text: "RAW FILMS has an incredible eye for emotions. Looking through our photos feels like reliving the entire wedding day. Every important moment is there, beautifully preserved forever.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Harsha & Sneha",
+    partner: null,
+    location: "Bengaluru Wedding, Karnataka",
+    initial: "H",
+    text: "Professional, friendly, and unbelievably talented. The candid photographs are our absolute favourites because they truly reflect who we are. Friends and relatives still ask who shot our wedding.",
+    rating: 5,
+  },
+];
+
+export default testimonials;

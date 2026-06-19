@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rawfilms.in/sitemap.xml
