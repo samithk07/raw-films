@@ -76,9 +76,9 @@ export default function About() {
               position: 'relative',
               overflow: 'hidden',
             }}>
-              {/* Image */}
+              {/* Image - Fixed Path */}
               <img 
-                src="public\images\stories\WhatsApp Image 2026-06-19 at 11.19.27 AM.jpeg" 
+                src="/images/stories/WhatsApp-Image-2026-06-19-at-11.19.27-AM.jpeg" 
                 alt="Shailu - Founder of RAW FILMS"
                 style={{
                   width: '100%',
@@ -89,7 +89,46 @@ export default function About() {
                   left: 0,
                 }}
                 loading="lazy"
+                onError={(e) => {
+                  // Fallback if image fails to load
+                  e.target.style.display = 'none'
+                }}
               />
+              
+              {/* Fallback SVG if image fails */}
+              <div 
+                className="fallback-svg"
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: 'linear-gradient(160deg,#1a1208 0%,#0d0a05 50%,#1a0f08 100%)',
+                }}
+              >
+                <svg viewBox="0 0 500 650" width="60%" height="60%" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="ag1" cx="50%" cy="40%">
+                      <stop offset="0%" stopColor="#c9a84c" stopOpacity=".2"/>
+                      <stop offset="100%" stopColor="#0d0a05" stopOpacity="0"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="500" height="650" fill="#1a1208"/>
+                  <rect width="500" height="650" fill="url(#ag1)"/>
+                  <circle cx="250" cy="220" r="100" fill="none" stroke="#c9a84c" strokeOpacity=".08" strokeWidth="1"/>
+                  <circle cx="250" cy="220" r="70" fill="#2a1f0f" stroke="#c9a84c" strokeOpacity=".1" strokeWidth="1"/>
+                  <text x="250" y="240" textAnchor="middle" fill="#c9a84c" fillOpacity=".6"
+                    fontFamily="Cormorant Garamond" fontSize="60" fontStyle="italic">AK</text>
+                  <text x="250" y="380" textAnchor="middle" fill="#c9a84c" fillOpacity=".7"
+                    fontFamily="Cormorant Garamond" fontSize="22" fontStyle="italic">Shailu</text>
+                  <text x="250" y="410" textAnchor="middle" fill="#c9a84c" fillOpacity=".4"
+                    fontFamily="Jost" fontSize="9" letterSpacing="5">FOUNDER - RAW FILMS</text>
+                  <line x1="170" y1="430" x2="330" y2="430" stroke="#c9a84c" strokeOpacity=".15" strokeWidth="1"/>
+                  <text x="250" y="460" textAnchor="middle" fill="#c9a84c" fillOpacity=".25"
+                    fontFamily="Jost" fontSize="9" letterSpacing="3">KASARAGODE, KERALA</text>
+                </svg>
+              </div>
               
               {/* Gradient Overlay for Text Readability */}
               <div style={{
