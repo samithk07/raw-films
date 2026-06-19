@@ -78,7 +78,7 @@ export default function About() {
             }}>
               {/* Image - Fixed Path */}
               <img 
-                src="/images/stories/WhatsApp-Image-2026-06-19-at-11.19.27-AM.jpeg" 
+                src="raw-films-1\public\images\stories\WhatsApp Image 2026-06-19 at 11.19.27 AM.jpeg" 
                 alt="Shailu - Founder of RAW FILMS"
                 style={{
                   width: '100%',
